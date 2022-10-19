@@ -136,8 +136,6 @@
             fetch(url)
                 .then(res => res.json()).then((data) => {
                     let datetime = data['datetime'].substr(11,5)
-                    // let datetime = data['datetime']
-                    console.log(datetime)
                     $('#currentTime').text(datetime)
                 })
         }
@@ -160,7 +158,7 @@
 
     <div class="main">
         <div id="currentWeather" class="currentWeather"></div>
-        <div class="greeting">Hello, Migdracios!</div>
+        <div class="greeting">Hello, Yungsang!</div>
         <div class="todo">
             <div id="currentTime" class="currentTime">12:25</div>
             <div class="totoTitle">TODAY'S TODO</div>
